@@ -40,6 +40,7 @@ This guide walks through the process of setting up the Windows Subsystem for Lin
     1. View the public key in WSL by running the command:
         ```sh
         cat ~/.ssh/id_rsa.pub
+        chmod 400 ~/my_key
         ```
     2. Log into Vast.ai and click on "Account".
     3. Locate "SSH Public Key" and paste your public key from WSL. Make sure to include the full string, including the machine name at the end.
