@@ -36,11 +36,17 @@ This guide walks through the process of setting up the Windows Subsystem for Lin
     - You'll be asked to enter a passphrase. This is optional — press Enter twice to skip.
     - Your public and private keys are now saved in WSL at `\\wsl.localhost\Ubuntu\root\.ssh`.
 
+- **Set Correct Permissions for Private Key**:
+    After generating your key pair, it's important to set the correct permissions on your private key file. This is a security measure required by SSH. Run the following command:
+    
+    ```sh
+    chmod 400 ~/.ssh/id_rsa
+    ```
+
 - **Add Public Key to Vast.ai**:
     1. View the public key in WSL by running the command:
         ```sh
         cat ~/.ssh/id_rsa.pub
-        chmod 400 ~/my_key
         ```
     2. Log into Vast.ai and click on "Account".
     3. Locate "SSH Public Key" and paste your public key from WSL. Make sure to include the full string, including the machine name at the end.
