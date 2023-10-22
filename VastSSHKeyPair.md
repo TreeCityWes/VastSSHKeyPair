@@ -1,6 +1,6 @@
 # WSL Setup and SSH Key Generation Guide
 
-This guide walks through the process of setting up the Windows Subsystem for Linux (WSL) and generating an SSH key pair for secure connection.
+Vast requires a public/private key-pair to log into your gpu instance. This guide walks through the process of setting up the Windows Subsystem for Linux (WSL) and generating an SSH key pair for a secure connection to Vast.ai instances. 
 
 ## 1. Install WSL - Windows Subsystem for Linux
 
@@ -10,7 +10,7 @@ This guide walks through the process of setting up the Windows Subsystem for Lin
     ```sh
     wsl --install
     ```
-    This command will enable the necessary optional features, download and install the latest Linux kernel, set WSL 2 as the default, and install a Ubuntu distribution. If you prefer a different distribution or want to install it manually, you can skip this command and follow the next steps.
+    This command will enable the necessary features, download and install the latest Linux kernel, set WSL 2 as the default, and install a Ubuntu distribution. If you prefer a different distribution or want to install it manually, you can skip this command and follow the next steps.
 
 - **Reboot Your Computer**: After the installation finishes, reboot your computer to complete the setup.
 
